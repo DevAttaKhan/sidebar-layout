@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Link, createBrowserRouter } from "react-router-dom";
 import { ProtectedRoute } from "@/components/common/protected-route";
 import { icons } from "lucide-react";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Link to="dashboard">go to dashboard</Link>,
   },
   {
     path: "/login",
